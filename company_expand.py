@@ -93,7 +93,7 @@ def process_row(row: Dict[str, str], openai_wrapper: OpenAIWrapper) -> Dict[str,
     content = fetch_webpage_content(domain)
     
     messages = [
-        {"role": "system", "content": "You are an AI assistant that analyzes company websites to extract 1) key AI features (be sure they are specifically AI-related) and 2) notable use cases for the products offered by the company."},
+        {"role": "system", "content": "You are an AI assistant that analyzes company websites to extract 1) key AI features (be sure they are specifically AI-related) and 2) notable business function specific use cases for the products offered by the company."},
         {"role": "user", "content": f"Analyze the following website content and extract key AI features and notable use cases:\n\n{content}"}
     ]
     
