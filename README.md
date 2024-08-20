@@ -1,27 +1,55 @@
-This is a script to add the following company info:
-- Key AI Features
-- Use cases
+# Company Info Expansion Script
 
-Instructions:
+This script adds key information to your company data, including:
 
-1. Clone the repository:
-git clone https://github.com/your-organization/company-expand.git
-cd company-expand
+- **Key AI Features**
+- **Use Cases**
 
-2. Create a virtual environment:
-python3 -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+## Instructions
 
-3. Install dependencies:
-pip install -r requirements.txt
+1. **Clone the Repository:**
 
-4. Create a .env file:
-cp .env.example .env
+   ```bash
+   git clone https://github.com/your-organization/company-expand.git
+   cd company-expand
+   ```
 
-Edit the .env file and add the actual API key.
+2. **Create a Virtual Environment:**
 
-5. replace input.csv with your own company data csv (be sure to test before using the full list!). rename the uploade data 'input.csv'
+   On macOS/Linux:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
 
-6. Run the script:
+   On Windows:
+   ```bash
+   python3 -m venv venv
+   venv\Scripts\activate
+   ```
 
-python company_expand.py
+3. **Install Dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Create and Configure the `.env` File:**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   - Open the `.env` file and add your actual API key.
+
+5. **Prepare Your Data:**
+
+   - Replace the `input.csv` file with your own company data CSV.
+   - Ensure to test with a small subset before using the full list.
+   - Rename your uploaded data file to `input.csv`.
+
+6. **Run the Script:**
+
+   ```bash
+   python company_expand.py
+   ```
